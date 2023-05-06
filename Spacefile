@@ -1,0 +1,12 @@
+v: 0
+app_name: Poke-Trivia
+micros:
+  - name: Poke-Trivia
+    src: .
+    engine: python3.9
+    primary: true
+    include:
+      - requirements.txt
+      - main.py
+      - src/
+    run: uvicorn main:app
